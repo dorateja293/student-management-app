@@ -5,7 +5,13 @@ const dataService = require('./dataService');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+n
+const corsOptions = {
+  origin: 'https://student-management-ap.netlify.app', // Your deployed frontend URL
+};
+app.use(cors(corsOptions));
+// -----------------------------
+
 app.use(express.json());
 
 // --- API Endpoints ---
@@ -37,7 +43,6 @@ app.get('/students/:id', (req, res) => {
 app.post('/students', (req, res) => {
   const studentData = req.body;
 
-  // **IMPROVEMENT**: Updated validation to include the 'course' field
   if (!studentData.firstName || !studentData.lastName || !studentData.email || !studentData.course) {
     return res.status(400).json({ error: 'Missing required fields: firstName, lastName, email, course' });
   }
