@@ -69,5 +69,5 @@ This project is a full-stack Student Management System built for the Technical D
 
 ## Implementation Summary
 
-* "I chose to build both the backend and frontend to demonstrate full-stack capabilities. The backend uses a service pattern to separate business logic from the API routes. The frontend is built with modern React, using hooks for state management and effects, and React Router for seamless client-side navigation...")*
+* I chose to build both the backend and frontend to demonstrate full-stack capabilities. The backend uses a service pattern to separate business logic from the API routes. The frontend is built with modern React, using hooks for state management and effects, and React Router for seamless client-side navigation...*
 
